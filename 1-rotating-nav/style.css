@@ -1,0 +1,94 @@
+body {
+  z-index: -1;
+  background-color: #333;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.wrapper {
+  transition: all 0.7s;
+  background-color: white;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.icon {
+  background-color: #ff7979;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 100%;
+  position: absolute;
+  top: -6rem;
+  left: -7rem;
+  z-index: 10;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 2.6rem;
+  position: absolute;
+  /* z-index: 10; */
+}
+
+.open {
+  transition: all 0.7s;
+
+  top: 7.5rem;
+  left: 8.5rem;
+}
+
+.close {
+  transition: all 0.7s;
+
+  top: 4rem;
+  left: 3rem;
+}
+
+.links {
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  font-size: 1.4rem;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
+
+.links li a:hover {
+  color: #ff7979;
+}
+
+.links li {
+  list-style: none;
+  margin-bottom: 1.4rem;
+}
+
+.links ul li:nth-child(2) {
+  padding-left: 1.5rem;
+}
+.links ul li:nth-child(3) {
+  padding-left: 3rem;
+}
+
+/* Js Class */
+.rotate {
+  transform: rotate(-180deg);
+}
+.rotate-wrapper {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+/* Js Class */
