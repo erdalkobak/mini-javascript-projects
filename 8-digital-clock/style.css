@@ -1,0 +1,43 @@
+:root {
+  --bg: #1e1e1e;
+  --text: #ffffff;
+  --element: #ff4500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.clock {
+  display: flex;
+  gap: 1rem;
+  font-size: 3.5rem;
+  color: var(--element);
+}
+
+.clock .hour::after {
+  content: ":";
+  margin-left: 1rem;
+}
+.clock .minute::after {
+  content: ":";
+  margin-left: 1rem;
+}
+
+.day {
+  font-size: 2.5rem;
+}
