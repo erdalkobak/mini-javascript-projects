@@ -1,0 +1,103 @@
+:root {
+  --bg: #f4f4f9;
+  --darkbg: #2e2e2e;
+  --text: #333333;
+  --main: #ff6347;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Helvetica, sans-serif;
+}
+
+.wrapper {
+  -webkit-box-shadow: 34px 66px 300px -4px rgba(46, 46, 46, 0.39);
+  -moz-box-shadow: 34px 66px 300px -4px rgba(46, 46, 46, 0.39);
+  box-shadow: 34px 66px 300px -4px rgba(46, 46, 46, 0.39);
+  background-color: var(--bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 9px;
+}
+
+.container-left {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 34rem;
+  -webkit-box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  -moz-box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  border-radius: 9px;
+}
+
+.add-people {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-people input {
+  padding: 1rem 1.8rem 1rem 1rem;
+  border-radius: 9px;
+  border: 1px solid var(--main);
+  outline: none;
+}
+.container-left ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 2.4rem;
+}
+.container-left ul li {
+  margin-bottom: 0.3rem;
+  list-style: decimal;
+}
+.container-right {
+  padding: 2rem;
+  -webkit-box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  -moz-box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  box-shadow: 3px 6px 10px 3px rgba(255, 99, 71, 0.3);
+  border-radius: 9px;
+}
+
+.shake {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+}
+.reset {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+.btn {
+  background-color: var(--main);
+  border: none;
+  cursor: pointer;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--text);
+  color: var(--main);
+}
